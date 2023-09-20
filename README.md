@@ -1,10 +1,11 @@
-https://haquedot.github.io/haquedot/
+haquedot.me
 <h1 align="center">Hi 👋, I'm Meraj</h1>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/haquedot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="haquedot" height="30" width="40" /></a>
 <a href="https://instagram.com/haquedot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="haquedot" height="30" width="40" /></a>
 <a href="https://www.youtube.com/@haquedot?si=bI71UFHB0iRGLnGA" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="haquedot" height="30" width="40" /></a>
+  <a href="https://www.www.linkedin.com/in/haquedot/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linkedin.svg" alt="haquedot" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
