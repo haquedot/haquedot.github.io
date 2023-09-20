@@ -1,9 +1,9 @@
-<a href="https://haquedot.me" target="blank"><img align="center" src="images/logo.png" width="40" />haque.</a>
+<a href="https://haquedot.me" target="blank"><img align="center" src="images/Haque.svg" width="40" /></a>
 <h1 align="center">Hi 👋, I'm Meraj</h1>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
   
-<a href="https://haquedot.me" target="blank"><img align="center" src="images/logo.png" height="30"/></a>
+<a href="https://haquedot.me" target="blank"><img align="center" src="images/Haque.svg" height="30"/></a>
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/haquedot/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/haquedot/" height="30" width="40" /></a>
 <a href="https://twitter.com/haquedot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="haquedot" height="30" width="40" /></a>
 <a href="https://instagram.com/haquedot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="haquedot" height="30" width="40" /></a>
