@@ -1,4 +1,4 @@
-haquedot.me
+https://haquedot.me
 <h1 align="center">Hi 👋, I'm Meraj</h1>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
