@@ -1,4 +1,6 @@
-<a href="https://haquedot.me" align="center" target="blank"><img align="center" src="images/Haque.svg" height="40" /></a>
+<h1 align="center">
+<a href="https://haquedot.me" target="blank"><img align="center" src="images/Haque.svg" height="40" /></a>
+</h1>
 <h1 align="center">Hi 👋, I'm Meraj</h1>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
