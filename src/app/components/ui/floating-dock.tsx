@@ -6,7 +6,7 @@
 'use client';
 
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { IconLayoutBottombarExpandFilled } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -17,6 +17,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { Button } from "./moving-border";
 
 export const FloatingDock = ({
   items,
@@ -74,7 +75,7 @@ const FloatingDockMobile = ({
                   href={item.href}
                   key={item.title}
                   className={cn(
-                    "h-10 w-10 rounded-full flex items-center justify-center",
+                    "rounded-full flex items-center justify-center",
                     item.noBackground ? "w-12 h-12" : "bg-gray-50 bg-neutral-900 p-3 w-12 h-12"
                   )}                >
                   <div className="h-full w-full">{item.icon}</div>
@@ -84,12 +85,15 @@ const FloatingDockMobile = ({
           </motion.div>
         )}
       </AnimatePresence>
-      <button
+      <Button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 bg-neutral-800 flex items-center justify-center"
+        className="bg-neutral-900 text-black border-slate-800"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 text-neutral-400" />
-      </button>
+        <IconLayoutBottombarExpandFilled
+          className={`h-5 w-5 text-neutral-400 transition-transform duration-300 ${open ? "rotate-180" : ""
+            }`}
+        />
+      </Button>
     </div>
   );
 };
@@ -108,7 +112,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -184,7 +188,7 @@ function IconContainer({
         onMouseLeave={() => setHovered(false)}
         className={cn(
           "aspect-square rounded-full flex items-center justify-center relative",
-          noBackground ? "w-12 h-12" : "bg-gray-200 bg-neutral-800 p-2 w-12 h-12"
+          noBackground ? "w-12 h-12" : "bg-neutral-800 p-2.5 w-12 h-12"
         )}
       >
         <AnimatePresence>

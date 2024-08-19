@@ -5,8 +5,7 @@ import {
     IconMessage,
     IconHome,
     IconSettings,
-    IconTerminal2,
-    IconSocial,
+    IconCube,
 } from "@tabler/icons-react";
 
 import haquedot from "/public/images/haquedot.png";
@@ -18,14 +17,14 @@ export function Navbar() {
         {
             title: "Projects",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 text-neutral-300" />
+                <IconCube className="h-full w-full text-neutral-400" />
             ),
             href: "/project",
         },
         {
             title: "Skills",
             icon: (
-                <IconSettings className="h-full w-full text-neutral-500 text-neutral-300" />
+                <IconSettings className="h-full w-full text-neutral-400" />
             ),
             href: "/skill",
         },
@@ -46,14 +45,14 @@ export function Navbar() {
         {
             title: "About",
             icon: (
-                <IconUser className="h-full w-full text-neutral-500 text-neutral-300" />
+                <IconUser className="h-full w-full text-neutral-400" />
             ),
             href: "/about",
         },
         {
             title: "Contact",
             icon: (
-                <IconMessage className="h-full w-full text-neutral-500 text-neutral-300" />
+                <IconMessage className="h-full w-full text-neutral-400" />
             ),
             href: "/contact",
         },
