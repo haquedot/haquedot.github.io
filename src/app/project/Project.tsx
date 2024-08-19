@@ -85,7 +85,7 @@ export default function Project() {
         <>
 
             <div className="mx-auto py-10 md:max-w-7xl">
-                <h1 className="mx-4 px-3 py-1 text-md font-bold text-start text-neutral-300 bg-neutral-900 w-min rounded-3xl">Projects</h1>
+                <h1 className="mx-4 px-2 py-0.5 text-xs text-start text-[#40ffa3] border border-[#40ffa3] w-min rounded-3xl">Projects</h1>
                 <Modal>
                     <div className="grid grid-cols-1 md:grid-cols-3">
                         {projects.map((project, index) => (

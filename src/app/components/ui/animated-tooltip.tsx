@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <a href={item.href} className="flex items-center p-3 sm:p-6 md:p-8 justify-center bg-neutral-900 rounded-full w-full">
+          <a href={item.href} className="flex items-center p-5 sm:p-6 md:p-8 justify-center bg-neutral-900 rounded-full w-full">
             {
               item.image ? (
                 <Image

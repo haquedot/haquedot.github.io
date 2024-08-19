@@ -73,10 +73,10 @@ export function Skill() {
     return (
         <div className="w-full py-10">
             <div className="w-full md:max-w-4xl mx-auto">
-                <h1 className="mb-8 mx-5 px-3 py-1 text-md font-bold text-start text-neutral-300 bg-neutral-900 w-min rounded-3xl">Skills</h1>
+                <h1 className="mb-8 mx-5 px-2 py-0.5 text-xs text-start text-[#40ffa3] border border-[#40ffa3] w-min rounded-3xl">Skills</h1>
             </div>
             <div className="flex flex-col">
-                <div className="h-min flex flex-row justify-center w-full md:max-w-4xl grid grid-cols-5 sm:grid-cols-7 mx-auto gap-4 px-4">
+                <div className="h-min flex flex-row justify-center w-full md:max-w-4xl grid grid-cols-4 sm:grid-cols-7 mx-auto gap-4 px-4">
                     <AnimatedTooltip items={skills} />
                 </div>
             </div>

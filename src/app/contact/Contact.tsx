@@ -16,7 +16,7 @@ export function Contact() {
         console.log("Form submitted");
     };
     return (
-        <div className="h-screen w-full flex items-center justify-center rounded-none md:rounded-2xl shadow-input bg-black px-4">
+        <div className="md:h-screen w-full flex items-center justify-center rounded-none md:rounded-2xl shadow-input bg-black px-4 py-10 md:py-0">
 
             <form className="border-2 border-zinc-800 p-4 md:p-6 rounded-2xl w-full sm:w-8/12 lg:w-4/12" onSubmit={handleSubmit}>
                 <h2 className="font-bold text-xl text-neutral-300 mb-8">

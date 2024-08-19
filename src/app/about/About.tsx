@@ -86,7 +86,7 @@ export function About() {
 
   return (
     <div className="mx-auto px-4 py-10 md:max-w-4xl">
-      <h1 className="mb-8 px-3 py-1 text-md font-bold text-start text-neutral-300 bg-neutral-900 w-min rounded-3xl">About</h1>
+      <h1 className="mb-8 px-2 py-0.5 text-xs text-start text-[#40ffa3] border border-[#40ffa3] w-min rounded-3xl">About</h1>
       <Tabs tabs={tabs} />
     </div>
   );
