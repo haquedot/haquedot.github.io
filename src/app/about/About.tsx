@@ -3,81 +3,33 @@
 
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { Tabs } from "../components/ui/tabs";
-import { IconBrandLinkedin, IconBrandGithub, IconBrandX, IconBrandInstagram, IconPhone, IconMail } from "@tabler/icons-react";
+import { socials } from "./SocialLink";
 
 export const aboutme = [
   {
     name: "MERAJUL HAQUE",
     description:
-      "My name is Merajul Haque and I am a UI Designer, and I'm very passionate and dedicated to my work. With 3 years experience as a UI designer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration."
+      "Final year B.Tech student specializing in Full Stack Development with expertise in React.js and the MERN stack. Strong foundation in programming, front-end and back-end development. Skilled in problem-solving, communication, and collaboration. Passionate about applying technical skills to impactful software projects and eager to continue learning and contributing to dynamic development teams"
   },
   {
-    // title: "Socials",
-    socials: [
-      {
-        id: 1,
-        name: "LinkedIn",
-        icon: (
-          <IconBrandLinkedin className="text-sky-500 text-sky-500 h-8 w-8" />),
-        href: "https://www.linkedin.com/in/haque/",
-      },
-      {
-        id: 2,
-        name: "GitHub",
-        icon: (
-          <IconBrandGithub className="text-neutral-500 text-neutral-300  h-8 w-8" />),
-        href: "#",
-      },
-      {
-        id: 3,
-        name: "Twitter",
-        icon: (
-          <IconBrandX className="text-sky-500 text-sky-500 h-8 w-8" />),
-        href: "https://twitter.com/haquedot",
-      },
-      {
-        id: 4,
-        name: "Instagram",
-        icon: (
-          <IconBrandInstagram className="text-red-500 text-red-300 h-8 w-8" />),
-        href: "https://www.instagram.com/haquedot/",
-      },
-      {
-        id: 5,
-        name: "Phone",
-        icon: (
-          <IconPhone className="text-neutral-500 text-neutral-300 h-8 w-8" />
-        ),
-        href: "tel:+91 1234567890"
-      },
-      {
-        id: 6,
-        name: "Email",
-        icon: (
-          <IconMail className="text-neutral-500 text-neutral-300 h-8 w-8" />
-        ),
-        href: "mailto:haquedot@gmail.com",
-      },
-      // ...other socials
-
-    ]
+    socials: socials,
   },
 ];
 
 export const experience = [
   {
-    title: "Intern",
+    title: "Software Developer Intern",
     company: "MeitY Project MANUU",
     duration: "Mar 2024 – Jun 2024",
     description:
-      "Worked as a frontend developer to develop the CMS dashboard of www.edeekshaam.in...",
+      "Developed a CMS dashboard for eDeekshaam, enhancing UI/UX and improving user interaction. Designed and implemented responsive Important Links and Events pages using React.js, boosting cross-browser compatibility and user engagement."
   },
   {
-    title: "Intern",
+    title: "Web Developer Intern",
     company: "MeitY Project MANUU",
     duration: "Mar 2024 – Jun 2024",
     description:
-      "Worked as a frontend developer to develop the CMS dashboard of www.edeekshaam.in...",
+      "Created four interactive educational games (Identify Fruits, Identify Animals, Identify Vehicles, Body Parts). Worked closely with UX designers and back-end developers, ensuring seamless integration and a cohesive user experience"
   }
   // ...other experience details
 ];
@@ -89,14 +41,14 @@ export const education = [
     company: "Maulana Azad National Urdu University, Hyderabad",
     duration: "Oct 2022 - May 2025",
     cgpa: "8.67/10 (Till 6th semesters)",
-    description: "Currently pursuing.",
+    description: "Coursework: Data Structures, Algorithms, Operating Systems, Database Management Systems, Software Engineering, Computer Networks, and Object-Oriented Programming.",
   },
   {
     title: "Diploma in Computer Science",
     company: "Maulana Azad National Urdu University, Hyderabad",
     duration: "Aug 2019 - Aug 2022",
     cgpa: "9.78/10",
-    description: "Secured 1st position in the university.",
+    description: "Achieved 1st position.",
   }
   // ...other education details
 ];
@@ -104,7 +56,7 @@ export const education = [
 export function About() {
   const tabs = [
     {
-      title: "About Me",
+      title: "Details",
       value: "About Me",
       content: (
         <div className="w-full overflow-hidden relative rounded-2xl p-3 md:p-10 text-white bg-neutral-900">
@@ -133,7 +85,8 @@ export function About() {
   ];
 
   return (
-    <div className="relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start py-4 md:py-12 px-4">
+    <div className="mx-auto px-4 py-10 md:max-w-4xl">
+      <h1 className="mb-8 px-3 py-1 text-md font-bold text-start text-neutral-300 bg-neutral-900 w-min rounded-3xl">About</h1>
       <Tabs tabs={tabs} />
     </div>
   );

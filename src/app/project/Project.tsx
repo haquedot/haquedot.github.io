@@ -7,8 +7,11 @@ import { motion } from "framer-motion";
 import farmOnHand from "/public/images/farmOndHand.png";
 import farmOnHandLogo from "/public/images/farmOnHandLogo.svg";
 import exceedRoboticsLogo from "/public/images/exceedRoboticsLogo.svg";
-
 import exceedRobotics from "/public/images/exceedRobotics.png";
+import elonaLogo from "/public/images/elonaLogo.svg";
+import elona from "/public/images/elona.jpg";
+
+
 
 import Image from "next/image";
 import { StaticImageData } from "next/image";
@@ -59,7 +62,17 @@ export default function Project() {
             liveUrl: "https://exceedrobotics.com/",
             imageProject: exceedRobotics,
             projectLogo: exceedRoboticsLogo,
-        }
+        },
+        {
+            title: "Elona",
+            description: "Developed a website using HTML, CSS, and JavaScript as a freelance project for a client. Implemented features such as a contact form, image gallery, and responsive design.",
+            techStack: "HTML, CSS, JavaScript",
+            repo: "#",
+            liveUrl: "https://elona.fun/",
+            imageProject: elona,
+            projectLogo: elonaLogo,
+        },
+
     ];
 
     function trimText(text: string, maxLength: number): string {
@@ -70,14 +83,16 @@ export default function Project() {
 
     return (
         <>
-            <div className="mx-auto px-4 py-10 md:max-w-4xl">
+
+            <div className="mx-auto py-10 md:max-w-7xl">
+                <h1 className="mx-4 px-3 py-1 text-md font-bold text-start text-neutral-300 bg-neutral-900 w-min rounded-3xl">Projects</h1>
                 <Modal>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3">
                         {projects.map((project, index) => (
                             <ModalTrigger
                                 key={index}
                                 onClick={() => setSelectedProject(project)}
-                                className="py-16 sm:py-24 md:py-48"
+                                className="py-16 sm:py-24 md:py-24"
                             >
                                 <PinContainer
                                     title={project.title}
@@ -89,7 +104,7 @@ export default function Project() {
                                             <Image
                                                 src={project.projectLogo}
                                                 alt={`${project.title} logo`}
-                                                height={50}
+                                                height={30}
                                             />
                                         </div>
                                         <h3 className="font-bold text-lg text-slate-100 w-full text-start">
@@ -97,7 +112,7 @@ export default function Project() {
                                         </h3>
                                         <p className="text-base text-slate-500">
                                             {trimText(project.description, 100)}
-                                            <span className="text-slate-300">Read more...</span>
+                                            <span className="text-slate-300"> Read more...</span>
                                         </p>
                                         <Image
                                             src={project.imageProject}
@@ -126,7 +141,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
         <div className="max-w-5xl mx-auto">
             <ModalBody>
                 <ModalContent className="h-full">
-                    <div className="grid sm:grid-cols-2 h-max">
+                    <div className="grid md:grid-cols-2 h-max">
                         <div className="flex flex-col justify-between p-6 md:p-12">
                             <div className="w-12 mb-4">
                                 <Image

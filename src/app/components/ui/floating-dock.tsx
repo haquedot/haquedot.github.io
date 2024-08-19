@@ -70,11 +70,12 @@ const FloatingDockMobile = ({
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
                 <Link
+                  onClick={() => setOpen(!open)}
                   href={item.href}
                   key={item.title}
                   className={cn(
                     "h-10 w-10 rounded-full flex items-center justify-center",
-                    item.noBackground ? "" : "bg-gray-50 bg-neutral-900 p-3 w-12 h-12"
+                    item.noBackground ? "w-12 h-12" : "bg-gray-50 bg-neutral-900 p-3 w-12 h-12"
                   )}                >
                   <div className="h-full w-full">{item.icon}</div>
                 </Link>
@@ -183,7 +184,7 @@ function IconContainer({
         onMouseLeave={() => setHovered(false)}
         className={cn(
           "aspect-square rounded-full flex items-center justify-center relative",
-          noBackground ? "" : "bg-gray-200 bg-neutral-800 p-2 w-12 h-12"
+          noBackground ? "w-12 h-12" : "bg-gray-200 bg-neutral-800 p-2 w-12 h-12"
         )}
       >
         <AnimatePresence>

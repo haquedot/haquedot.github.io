@@ -16,6 +16,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        arialUnicode: ['"Arial Unicode MS"', 'sans-serif'],
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },

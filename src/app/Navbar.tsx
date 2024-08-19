@@ -35,7 +35,7 @@ export function Navbar() {
                 <Image
                     src={haquedot}
                     alt="haque."
-                    className="text-neutral-500 text-neutral-300"
+                    className="h-full w-full"
                 />
 
             ),

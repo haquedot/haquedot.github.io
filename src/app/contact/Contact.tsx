@@ -8,6 +8,7 @@ import {
     IconBrandGoogle,
     IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { SocialLink } from "../about/SocialLink";
 
 export function Contact() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -17,8 +18,8 @@ export function Contact() {
     return (
         <div className="h-screen w-full flex items-center justify-center rounded-none md:rounded-2xl shadow-input bg-black px-4">
 
-            <form className="border p-5 md:p-10 rounded-2xl md:w-4/12" onSubmit={handleSubmit}>
-                <h2 className="font-bold text-xl text-neutral-300 mb-12">
+            <form className="border-2 border-zinc-800 p-4 md:p-6 rounded-2xl w-full sm:w-8/12 lg:w-4/12" onSubmit={handleSubmit}>
+                <h2 className="font-bold text-xl text-neutral-300 mb-8">
                     Contact Me
                 </h2>
                 <LabelInputContainer className="mb-4">
@@ -32,15 +33,16 @@ export function Contact() {
 
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="message">Message</Label>
-                    <TextArea id="message" placeholder="Enter your message" rows={4}/>
+                    <TextArea id="message" placeholder="Type your message..." rows={4}/>
                 </LabelInputContainer>
                 <button
-                    className="bg-gradient-to-br relative group/btn from-black from-zinc-900 to-zinc-900 to-neutral-600 block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                    className=" mb-8 bg-gradient-to-br relative group/btn from-black from-zinc-900 to-zinc-900 to-neutral-600 block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                     type="submit"
                 >
                     Send
                     <BottomGradient />
                 </button>
+                <SocialLink/>
             </form>
         </div>
     );
