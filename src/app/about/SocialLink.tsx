@@ -8,7 +8,7 @@ export const socials = [
         id: 1,
         name: "LinkedIn",
         icon: <IconBrandLinkedin className="text-sky-500 h-6 w-6" />,
-        href: "https://www.linkedin.com/in/haque/",
+        href: "https://www.linkedin.com/in/haquedot/",
     },
     {
         id: 2,
