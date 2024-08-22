@@ -3,11 +3,6 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Label } from "../components/ui/label";
 import { Input, TextArea } from "../components/ui/input";
-import {
-    IconBrandGithub,
-    IconBrandGoogle,
-    IconBrandOnlyfans,
-} from "@tabler/icons-react";
 import { SocialLink } from "../about/SocialLink";
 
 export function Contact() {

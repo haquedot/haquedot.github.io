@@ -3,9 +3,10 @@ import { FloatingDock } from "./components/ui/floating-dock";
 import {
     IconUser,
     IconMessage,
-    IconHome,
+    IconBrandBlogger,
     IconSettings,
     IconCube,
+    IconSocial,
 } from "@tabler/icons-react";
 
 import haquedot from "/public/images/haquedot.png";
@@ -13,7 +14,13 @@ import Image from "next/image";
 
 export function Navbar() {
     const links = [
-
+        {
+            title: "Socials",
+            icon: (
+                <IconSocial className="h-full w-full text-neutral-400" />
+            ),
+            href: "/social",
+        },
         {
             title: "Projects",
             icon: (
@@ -48,6 +55,13 @@ export function Navbar() {
                 <IconUser className="h-full w-full text-neutral-400" />
             ),
             href: "/about",
+        },
+        {
+            title: "Blogs",
+            icon: (
+                <IconBrandBlogger className="h-full w-full text-neutral-400" />
+            ),
+            href: "/blog",
         },
         {
             title: "Contact",
