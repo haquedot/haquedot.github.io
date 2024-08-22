@@ -4,9 +4,9 @@ export default function Home() {
             <div className="md:max-w-6xl text-white mx-auto py-10">
             <p className="updated-date">Last updated on Aug 22 2024</p>
                 <p className="content-text">
-                    For the purpose of these Terms and Conditions, the term "we", "us", "our" used anywhere on this page shall mean MD MERAJUL HAQUE, whose registered/operational office is 
+                    For the purpose of these Terms and Conditions, the term we, us, our used anywhere on this page shall mean MD MERAJUL HAQUE, whose registered/operational office is 
                     VILLAGE + POST OFFICE- GARHARA, DISTRICT - BEGUSARAI, BIHAR, 851126, Begusarai, BIHAR, 851126. 
-                    "You", “your”, "user", “visitor” shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.
+                    You, your, user, visitor shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.
                 </p>
                 <p className="content-text">
                     <strong>Your use of the website and/or purchase from us are governed by the following Terms and Conditions:</strong>
@@ -44,7 +44,7 @@ export default function Home() {
                         </p>
                     </li>
                     <li className="list-item">
-                        <p className="content-text list-text">You may not create a link to our website from another website or document without MD MERAJUL HAQUE’s prior written consent.</p>
+                        <p className="content-text list-text">You may not create a link to our website from another website or document without MD MERAJUL HAQUE prior written consent.</p>
                     </li>
                     <li className="list-item">
                         <p className="content-text list-text">Any dispute arising out of the use of our website and/or purchase with us and/or any engagement with us is subject to the laws of India.</p>
